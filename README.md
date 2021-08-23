@@ -15,7 +15,7 @@ $ git clone <REPO-URL>
 ```
 ### Go to project folder
 ```bash
-$ cd ./magic-math
+$ cd ./math
 ```
 ### Run project
 ```bash
