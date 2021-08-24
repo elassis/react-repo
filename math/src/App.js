@@ -1,12 +1,13 @@
 
 import React from 'react';
 import './App.css';
+import Calculator from './components/calculator';
 
 class App extends React.Component{
  
   render() {
     return (
-      <h1 className="text">Hello, world</h1>
+      <Calculator />
     )
   }
 }
