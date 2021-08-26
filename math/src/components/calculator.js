@@ -43,7 +43,7 @@ const Calculator = () =>{
       <div className='calculator-container'>
         <div className="row">
           <div className="screen">
-            {/*i'm setting this text as value of the component and its display it */}
+          
            <Screen  />
           </div>
         </div>
