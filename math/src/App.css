@@ -16,6 +16,14 @@
   padding: 0;
 }
 
+.number {
+  background-color: lightgray;
+}
+
+.button {
+  background-color: orange;
+}
+
 .number,
 .button {
   width: 25%;
@@ -26,16 +34,10 @@
   border: 1px solid rgb(212, 205, 205);
   cursor: pointer;
 }
-.number:active,.button:active{
+
+.number:active,
+.button:active {
   transform: scale(0.95);
-}
-
-.number {
-  background-color: lightgray;
-}
-
-.button {
-  background-color: orange;
 }
 
 .dot {
@@ -61,7 +63,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding-left: 90%;
+  padding-left: 80%;
   border: none;
   box-sizing: border-box;
 }

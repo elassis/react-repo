@@ -17,40 +17,41 @@ class Calculator extends React.Component{
     this.display = this.display.bind(this);    
   }
   display(value){
+   
     let obj = {};
+    //Displaying value in the screen if its a number an basic operation
     obj = calculate(this.state,value);
+    console.log(obj)
+    if(value === '='){
+      this.text = obj.total;
+    }else if(value === 'AC'){
+      this.text ='';
+    }else if(value === '+/-'){
+      if(obj.next){
+        this.text = obj.next;
+      }
+      if(obj.total){
+        this.text = obj.total;
+      }
+    }else{
+      this.text += value;
+    }
     
     if(obj.total || obj.total === null){
       this.setState({
         total:obj.total
-      },()=>{
-        if(obj.total){
-          this.text = this.state.total;
-          console.log(this.state)
-        }
-      })
-      
+      })      
     } 
     if(obj.next || obj.next === null){
       this.setState({
         next:obj.next
-      },()=>{
-        if(obj.next){
-          console.log(this.state)
-        }
       })
     }
      if(obj.operation || obj.operation === null){
       this.setState({
         operation:obj.operation
-      },()=>{
-        if(obj.operation){
-          console.log(this.state)
-        }
       })
-    }
-    
-      
+    } 
   }
  
   render(){
