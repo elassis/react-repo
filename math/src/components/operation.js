@@ -7,8 +7,7 @@ class Operation extends React.Component{
     this.showMe = this.showMe.bind(this);
   }
   showMe(){
-    this.props.display(this.props.value)
-   
+    this.props.display(this.props.value)   
   }
    getClassName(value){
     if(value === 'AC'|| value === '+/-'||value === '%'){
