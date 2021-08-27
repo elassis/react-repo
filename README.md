@@ -1,8 +1,6 @@
 # What is this Project about ❓
 * This project is about a Single Page Application (SPA) developed using React. the application its a fully functional website where one of its features its a fully functional calculator.
 
-## Live Deployment 👀
-- [HERE]()
 
 ## Prerequisites ☑️
 - Node.js
