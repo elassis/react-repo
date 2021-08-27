@@ -11,6 +11,10 @@
 ```bash
 $ git clone <REPO-URL>
 ```
+### install dependencies
+```bash
+$ npm install
+```
 ### Go to project folder
 ```bash
 $ cd ./math
