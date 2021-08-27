@@ -67,7 +67,7 @@ export default function calculate(obj, buttonName) {
       // if operation equals % and there is a number execute
       if(obj.total && obj.operation === '%'){
         return{
-          total:(parseFloat(obj.total) / 100).toString()
+          total:(parseFloat(obj.total) / 10).toString()
         };
       }
       return {};

@@ -1,12 +1,12 @@
 import React from 'react';
 import '../App.css';
 
-class Screen extends React.Component{
-  render(){
+const Screen = () =>{
+
     return (
-      <div className="input">{this.props.value}</div>
+      <div id="screen" className="input"></div>
     );
-  }
+
 }
 
 export default Screen;
