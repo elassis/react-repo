@@ -40,10 +40,11 @@ const Calculator = () =>{
     console.log(state)
   } 
     return (
+      <div className="container-calculator">
+         <h1 className="title-page">Let's do some math!</h1>  
       <div className='calculator-container'>
         <div className="row">
-          <div className="screen">
-          
+          <div className="screen">          
            <Screen  />
           </div>
         </div>
@@ -76,6 +77,7 @@ const Calculator = () =>{
            <Operation value='.' display={display}/>      
            <Operation value='=' display={display}/>
         </div>
+      </div>
       </div>
     );
   
