@@ -1,4 +1,4 @@
-const calculate  = require("../src/logic/calculate");
+import calculate from "../logic/calculate"
 
 test('getting values from calculate',()=>{
   const objresult = calculate({
