@@ -21,6 +21,7 @@ exports[`renders correctly 1`] = `
         <div
           className="input"
           id="screen"
+          title="screen"
         />
       </div>
     </div>
@@ -30,6 +31,7 @@ exports[`renders correctly 1`] = `
       <button
         className="button"
         onClick={[Function]}
+        title="AC"
         type="button"
       >
         AC
@@ -101,6 +103,7 @@ exports[`renders correctly 1`] = `
       <button
         className="number"
         onClick={[Function]}
+        title="#5"
         type="button"
       >
         5

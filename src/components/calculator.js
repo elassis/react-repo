@@ -44,7 +44,7 @@ const Calculator = () => {
           </div>
         </div>
         <div className="row">
-          <button type="button" className="button" onClick={() => { display('AC'); }}>AC</button>
+          <button type="button" title="AC" className="button" onClick={() => { display('AC'); }}>AC</button>
           <button type="button" className="button" onClick={() => { display('+/-'); }}>+/-</button>
           <button type="button" className="button" onClick={() => { display('%'); }}>%</button>
           <button type="button" className="button" onClick={() => { display('/'); }}>/</button>
@@ -57,7 +57,7 @@ const Calculator = () => {
         </div>
         <div className="row">
           <button type="button" className="number" onClick={() => { display('4'); }}>4</button>
-          <button type="button" className="number" onClick={() => { display('5'); }}>5</button>
+          <button type="button" className="number" title="#5" onClick={() => { display('5'); }}>5</button>
           <button type="button" className="number" onClick={() => { display('6'); }}>6</button>
           <button type="button" className="button" onClick={() => { display('-'); }}>-</button>
         </div>
