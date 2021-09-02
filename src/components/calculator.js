@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
 import Screen from './screen';
-import Number from './number';
-import Operation from './operation';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -46,33 +44,33 @@ const Calculator = () => {
           </div>
         </div>
         <div className="row">
-          <Operation value="AC" display={display} />
-          <Operation value="+/-" display={display} />
-          <Operation value="%" display={display} />
-          <Operation value="/" display={display} />
+          <button type="button" className="button" onClick={() => { display('AC'); }}>AC</button>
+          <button type="button" className="button" onClick={() => { display('+/-'); }}>+/-</button>
+          <button type="button" className="button" onClick={() => { display('%'); }}>%</button>
+          <button type="button" className="button" onClick={() => { display('/'); }}>/</button>
         </div>
         <div className="row">
-          <Number value="7" display={display} />
-          <Number value="8" display={display} />
-          <Number value="9" display={display} />
-          <Operation value="x" display={display} />
+          <button type="button" className="number" onClick={() => { display('7'); }}>7</button>
+          <button type="button" className="number" onClick={() => { display('8'); }}>8</button>
+          <button type="button" className="number" onClick={() => { display('9'); }}>9</button>
+          <button type="button" className="button" onClick={() => { display('x'); }}>x</button>
         </div>
         <div className="row">
-          <Number value="4" display={display} />
-          <Number value="5" display={display} />
-          <Number value="6" display={display} />
-          <Operation value="-" display={display} />
+          <button type="button" className="number" onClick={() => { display('4'); }}>4</button>
+          <button type="button" className="number" onClick={() => { display('5'); }}>5</button>
+          <button type="button" className="number" onClick={() => { display('6'); }}>6</button>
+          <button type="button" className="button" onClick={() => { display('-'); }}>-</button>
         </div>
         <div className="row">
-          <Number value="1" display={display} />
-          <Number value="2" display={display} />
-          <Number value="3" display={display} />
-          <Operation value="+" display={display} />
+          <button type="button" className="number" onClick={() => { display('1'); }}>1</button>
+          <button type="button" className="number" onClick={() => { display('2'); }}>2</button>
+          <button type="button" className="number" onClick={() => { display('3'); }}>3</button>
+          <button type="button" className="button" onClick={() => { display('+'); }}>+</button>
         </div>
         <div className="row">
-          <Number value="0" display={display} />
-          <Operation value="." display={display} />
-          <Operation value="=" display={display} />
+          <button type="button" className="number zero" onClick={() => { display('0'); }}>0</button>
+          <button type="button" className="button dot" onClick={() => { display('.'); }}>.</button>
+          <button type="button" className="button" onClick={() => { display('='); }}>=</button>
         </div>
       </div>
     </div>
