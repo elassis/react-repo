@@ -28,7 +28,7 @@ export default function calculate(obj, buttonName) {
     if (obj.next) {
       return {
         next: obj.next + buttonName,
-        total: null
+        total: null,
       };
     }
     return {
@@ -42,7 +42,7 @@ export default function calculate(obj, buttonName) {
       if (obj.next.includes('.')) {
         return {};
       }
-      return { next: obj.next + '.' };
+      return { next: `${obj.next}.` };
     }
     if (obj.operation) {
       return { next: '0.' };
@@ -51,7 +51,7 @@ export default function calculate(obj, buttonName) {
       if (obj.total.includes('.')) {
         return {};
       }
-      return { total: obj.total + '.' };
+      return { total: `${obj.total}.` };
     }
     return { total: '0.' };
   }
@@ -63,15 +63,14 @@ export default function calculate(obj, buttonName) {
         next: null,
         operation: null,
       };
-    } else {
-      // if operation equals % and there is a number execute
-      if(obj.total && obj.operation === '%'){
-        return{
-          total:(parseFloat(obj.total) / 10).toString()
-        };
-      }
-      return {};
     }
+    // if operation equals % and there is a number execute
+    if (obj.total && obj.operation === '%') {
+      return {
+        total: (parseFloat(obj.total) / 10).toString(),
+      };
+    }
+    return {};
   }
 
   if (buttonName === '+/-') {
@@ -84,7 +83,6 @@ export default function calculate(obj, buttonName) {
     return {};
   }
 
-  
   // User pressed an operation button and there is an existing operation
   if (obj.operation) {
     return {
@@ -93,8 +91,6 @@ export default function calculate(obj, buttonName) {
       operation: buttonName,
     };
   }
-
-
 
   // The user hasn't typed a number yet, just save the operation
   if (!obj.next) {
@@ -107,5 +103,4 @@ export default function calculate(obj, buttonName) {
     next: null,
     operation: buttonName,
   };
-  
 }

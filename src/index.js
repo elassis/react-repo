@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MathContainer from "./components/MathContainer"
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
+import MathContainer from './components/MathContainer';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <MathContainer />
+      <MathContainer />
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
-
-

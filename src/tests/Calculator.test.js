@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Operation from '../components/operation'
+import Calculator from '../components/calculator';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<Operation />)
+    .create(<Calculator />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
