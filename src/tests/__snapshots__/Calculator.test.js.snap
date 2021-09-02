@@ -27,136 +27,155 @@ exports[`renders correctly 1`] = `
     <div
       className="row"
     >
-      <div
-        className="button dot"
+      <button
+        className="button"
         onClick={[Function]}
+        type="button"
       >
         AC
-      </div>
-      <div
-        className="button dot"
+      </button>
+      <button
+        className="button"
         onClick={[Function]}
+        type="button"
       >
         +/-
-      </div>
-      <div
-        className="button dot"
+      </button>
+      <button
+        className="button"
         onClick={[Function]}
+        type="button"
       >
         %
-      </div>
-      <div
+      </button>
+      <button
         className="button"
         onClick={[Function]}
+        type="button"
       >
         /
-      </div>
+      </button>
     </div>
     <div
       className="row"
     >
-      <div
+      <button
         className="number"
         onClick={[Function]}
+        type="button"
       >
         7
-      </div>
-      <div
+      </button>
+      <button
         className="number"
         onClick={[Function]}
+        type="button"
       >
         8
-      </div>
-      <div
+      </button>
+      <button
         className="number"
         onClick={[Function]}
+        type="button"
       >
         9
-      </div>
-      <div
+      </button>
+      <button
         className="button"
         onClick={[Function]}
+        type="button"
       >
         x
-      </div>
+      </button>
     </div>
     <div
       className="row"
     >
-      <div
+      <button
         className="number"
         onClick={[Function]}
+        type="button"
       >
         4
-      </div>
-      <div
+      </button>
+      <button
         className="number"
         onClick={[Function]}
+        type="button"
       >
         5
-      </div>
-      <div
+      </button>
+      <button
         className="number"
         onClick={[Function]}
+        type="button"
       >
         6
-      </div>
-      <div
+      </button>
+      <button
         className="button"
         onClick={[Function]}
+        type="button"
       >
         -
-      </div>
+      </button>
     </div>
     <div
       className="row"
     >
-      <div
+      <button
         className="number"
         onClick={[Function]}
+        type="button"
       >
         1
-      </div>
-      <div
+      </button>
+      <button
         className="number"
         onClick={[Function]}
+        type="button"
       >
         2
-      </div>
-      <div
+      </button>
+      <button
         className="number"
         onClick={[Function]}
+        type="button"
       >
         3
-      </div>
-      <div
+      </button>
+      <button
         className="button"
         onClick={[Function]}
+        type="button"
       >
         +
-      </div>
+      </button>
     </div>
     <div
       className="row"
     >
-      <div
+      <button
         className="number zero"
         onClick={[Function]}
+        type="button"
       >
         0
-      </div>
-      <div
-        className="button"
+      </button>
+      <button
+        className="button dot"
         onClick={[Function]}
+        type="button"
       >
         .
-      </div>
-      <div
+      </button>
+      <button
         className="button"
         onClick={[Function]}
+        type="button"
       >
         =
-      </div>
+      </button>
     </div>
   </div>
 </div>
